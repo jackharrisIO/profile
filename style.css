@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|ZCOOL+XiaoWei&display=swap");
+
+@media (max-width: 1960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #1a2a6c, #b21f1f, #fdbb2d);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+}
+
+h1, h2, h3, h4 {
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+a {
+  text-decoration: none;
+  color: #6B72E1;
+}
+
+a:hover {
+  color: #353970;
+}
+
+ul {
+  display: block;
+}
+
+#avatar {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+#introduction {
+    margin-bottom: 35px;
+}
+
+.btn-blue {
+    background-color: #6B72E1;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+}
+
+.btn-blue:hover {
+  color: white;
+  background-color: #353970;
+}
+
+
+.container {
+    margin: 40px auto;
+}
+
+.card {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.list-inline  {
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.list-inline li {
+    display: inline;
+    margin: 10px;
+  }
+
+span.wave {
+  animation-name: wave-animation;    /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;          /* Change to speed up or slow down */
+  animation-iteration-count: infinite;    /* Never stop waving :) */
+  transform-origin: 70% 70%;         /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }    /* The following four values can be played with to make the waving more or less extreme */
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }    /* Reset for the last half to pause */
+  100% { transform: rotate(  0.0deg) }
+}
+
+.xola-checkout {
+  margin-top: 20px;
+}
+
+input, textarea {
+    padding: 9px;
+    border: solid 1px #E5E5E5;
+    outline: 0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+    width: 100%;
+    background: #FFFFFF;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    border-color: #C9C9C9;
+}
+
+label {
+    margin-left: 0px;
+    color: #999999;
+}
+
+button, input[type="submit"] {
+    width: auto;
+    padding: 9px 15px;
+    background: #cccccc;
+    border: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+}
